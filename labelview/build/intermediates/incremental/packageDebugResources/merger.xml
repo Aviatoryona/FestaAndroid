@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="E:\Documents\DeveloperProjects\android\Festa\labelview\src\main\res"/><source path="E:\Documents\DeveloperProjects\android\Festa\labelview\build\generated\res\rs\debug"/><source path="E:\Documents\DeveloperProjects\android\Festa\labelview\build\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="main" generated-set="main$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="E:\Documents\DeveloperProjects\android\Festa\labelview\src\main\res"><file path="E:\Documents\DeveloperProjects\android\Festa\labelview\src\main\res\values\attr.xml" qualifiers=""><declare-styleable name="LabelView">
+        <attr format="dimension" name="label_distance"/>
+        <attr format="dimension" name="label_height"/>
+        <attr format="dimension" name="label_strokeWidth"/>
+        <attr format="color" name="label_backgroundColor"/>
+        <attr format="color" name="label_strokeColor"/>
+        <attr format="string" name="label_text"/>
+        <attr format="dimension" name="label_textSize"/>
+        <attr format="enum" name="label_textStyle">
+            <enum name="NORMAL" value="0"/>
+            <enum name="BOLD" value="1"/>
+            <enum name="ITALIC" value="2"/>
+            <enum name="BOLD_ITALIC" value="3"/>
+        </attr>
+        <attr format="color" name="label_textColor"/>
+        <attr format="boolean" name="label_visual"/>
+        <attr format="enum" name="label_orientation">
+            <enum name="LEFT_TOP" value="1"/>
+            <enum name="RIGHT_TOP" value="2"/>
+            <enum name="LEFT_BOTTOM" value="3"/>
+            <enum name="RIGHT_BOTTOM" value="4"/>
+        </attr>
+    </declare-styleable></file><file path="E:\Documents\DeveloperProjects\android\Festa\labelview\src\main\res\values\strings.xml" qualifiers=""><string name="app_name">Lib</string></file></source><source path="E:\Documents\DeveloperProjects\android\Festa\labelview\build\generated\res\rs\debug"/><source path="E:\Documents\DeveloperProjects\android\Festa\labelview\build\generated\res\resValues\debug"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug$Generated" generated="true" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="E:\Documents\DeveloperProjects\android\Festa\labelview\src\debug\res"/></dataSet><dataSet aapt-namespace="http://schemas.android.com/apk/res-auto" config="debug" generated-set="debug$Generated" ignore_pattern="!.svn:!.git:!.ds_store:!*.scc:.*:&lt;dir>_*:!CVS:!thumbs.db:!picasa.ini:!*~"><source path="E:\Documents\DeveloperProjects\android\Festa\labelview\src\debug\res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="LabelView">
+        <attr format="dimension" name="label_distance"/>
+        <attr format="dimension" name="label_height"/>
+        <attr format="dimension" name="label_strokeWidth"/>
+        <attr format="color" name="label_backgroundColor"/>
+        <attr format="color" name="label_strokeColor"/>
+        <attr format="string" name="label_text"/>
+        <attr format="dimension" name="label_textSize"/>
+        <attr format="enum" name="label_textStyle">
+            <enum name="NORMAL" value="0"/>
+            <enum name="BOLD" value="1"/>
+            <enum name="ITALIC" value="2"/>
+            <enum name="BOLD_ITALIC" value="3"/>
+        </attr>
+        <attr format="color" name="label_textColor"/>
+        <attr format="boolean" name="label_visual"/>
+        <attr format="enum" name="label_orientation">
+            <enum name="LEFT_TOP" value="1"/>
+            <enum name="RIGHT_TOP" value="2"/>
+            <enum name="LEFT_BOTTOM" value="3"/>
+            <enum name="RIGHT_BOTTOM" value="4"/>
+        </attr>
+    </declare-styleable></configuration></mergedItems></merger>

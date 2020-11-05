@@ -1,0 +1,4 @@
+include ':app', ':circularimageview', ':dialogsheet', ':drawme', ':flatbutton', ':fontutils', ':gpuimage', ':imagecropper', ':instafilter', ':customfloatingactionbutton',
+        ':slidingactivity', ':labelview', ':animatedicons', ':viewanimator', ':bungeelib', ':kenburnsview',
+        //':locationmanager',
+        ':ahbottomnavigation', ':arclayout', ':bounceview', ':diagonallayout', ':whorlviewlibrary', ':ariana', ':materialchipview', ':circularfloatingactionmenu'

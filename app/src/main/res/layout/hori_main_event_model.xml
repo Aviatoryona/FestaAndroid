@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:drawme="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="256dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    app:cardBackgroundColor="@color/grey_0"
+    app:cardCornerRadius="12dp"
+    app:cardPreventCornerOverlap="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.joooonho.SelectableRoundedImageView
+            android:id="@+id/imgMainImg"
+            android:layout_width="match_parent"
+            android:layout_height="256dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/dia"
+            app:sriv_left_top_corner_radius="12dip"
+            app:sriv_right_top_corner_radius="12dip" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fab_margin"
+            android:layout_marginBottom="10dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/fab_margin"
+                android:orientation="vertical">
+
+                <com.rafakob.drawme.DrawMeTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Apr 10"
+                    drawme:dm_font="Lato.ttf"
+                    tools:ignore="HardcodedText" />
+
+                <com.rafakob.drawme.DrawMeTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="Champagne Festival"
+                    android:textColor="@color/grey_1000"
+                    android:textStyle="bold"
+                    drawme:dm_font="Lato-Bold.ttf"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="KICC Nairobi"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/textsmall"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/fab_margin"
+                android:background="@drawable/round_bg_white_no_stroke"
+                android:contentDescription="@string/app_name"
+                android:padding="12dp"
+                android:src="@drawable/geo_fence_36px" />
+        </RelativeLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

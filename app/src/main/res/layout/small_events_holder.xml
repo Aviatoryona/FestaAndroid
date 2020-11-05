@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        android:src="@mipmap/dia"
+        tools:ignore="ContentDescription" />
+
+    <com.lid.lib.LabelTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lorem"
+        android:layout_marginStart="8dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        app:label_backgroundColor="#C2185B"
+        app:label_distance="15dp"
+        app:label_orientation="RIGHT_TOP"
+        app:label_text="FESTA"
+        app:label_textSize="10sp"
+        app:label_textStyle="BOLD_ITALIC"
+        tools:ignore="HardcodedText,RtlSymmetry" />
+    <!--<com.rafakob.drawme.DrawMeTextView-->
+    <!--android:id="@+id/image_likes"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginStart="8dp"-->
+    <!--android:ellipsize="end"-->
+    <!--android:maxLines="3"-->
+    <!--android:text="@string/lorem"-->
+    <!--android:textSize="@dimen/textsmall"-->
+    <!--drawme:dm_font="apercu_regular.otf"-->
+    <!--tools:ignore="HardcodedText" />-->
+</LinearLayout>

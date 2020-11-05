@@ -1,0 +1,77 @@
+apply plugin: 'com.android.library'
+apply plugin: 'maven'
+
+archivesBaseName = 'android-crop'
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 28
+
+//        testPackageName 'com.soundcloud.android.crop.test'
+//        testInstrumentationRunner 'android.test.InstrumentationTestRunner'
+    }
+}
+
+dependencies {
+    androidTestImplementation 'com.squareup:fest-android:1.0.7'
+    androidTestImplementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    androidTestImplementation 'org.mockito:mockito-core:2.7.2'
+    androidTestImplementation 'com.google.dexmaker:dexmaker:1.0'
+    androidTestImplementation 'com.google.dexmaker:dexmaker-mockito:1.0'
+}
+
+task apklib(type: Zip) {
+    destinationDir = file('build/libs')
+    appendix = extension = 'apklib'
+
+    from 'src/main/AndroidManifest.xml'
+    into('res') {
+        from 'src/main/res'
+    }
+    into('src') {
+        from 'src/main/java'
+    }
+}
+
+artifacts {
+    archives apklib
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: 'http://maven.int.s-cloud.net/content/repositories/releases')
+
+            modifyPom(addFilter('aar') { artifact, file ->
+                artifact.name == archivesBaseName
+            })
+
+            modifyPom(addFilter('apklib') { artifact, file ->
+                artifact.name == archivesBaseName + '-apklib'
+            })
+        }
+    }
+}
+
+def modifyPom(pom) {
+    pom.project {
+        name 'android-crop'
+        description 'A simple Activity for cropping images'
+        url 'https://github.com/jdamcd/android-crop'
+
+        licenses {
+            license {
+                name 'The Apache Software License, Version 2.0'
+                url 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+            }
+        }
+
+        organization {
+            name 'SoundCloud'
+            url 'http://developers.soundcloud.com'
+        }
+    }
+}

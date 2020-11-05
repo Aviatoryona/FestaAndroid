@@ -1,0 +1,23 @@
+-- Merging decision tree log ---
+manifest
+ADDED from E:\Documents\DeveloperProjects\android\Festa\gpuimage\AndroidManifest.xml:2:1-4:12
+INJECTED from E:\Documents\DeveloperProjects\android\Festa\gpuimage\AndroidManifest.xml:2:1-4:12
+INJECTED from E:\Documents\DeveloperProjects\android\Festa\gpuimage\AndroidManifest.xml:2:1-4:12
+INJECTED from E:\Documents\DeveloperProjects\android\Festa\gpuimage\AndroidManifest.xml:2:1-4:12
+INJECTED from E:\Documents\DeveloperProjects\android\Festa\gpuimage\AndroidManifest.xml:2:1-4:12
+INJECTED from E:\Documents\DeveloperProjects\android\Festa\gpuimage\AndroidManifest.xml:2:1-4:12
+INJECTED from E:\Documents\DeveloperProjects\android\Festa\gpuimage\AndroidManifest.xml:2:1-4:12
+	package
+		ADDED from E:\Documents\DeveloperProjects\android\Festa\gpuimage\AndroidManifest.xml:3:5-48
+		INJECTED from E:\Documents\DeveloperProjects\android\Festa\gpuimage\AndroidManifest.xml
+		INJECTED from E:\Documents\DeveloperProjects\android\Festa\gpuimage\AndroidManifest.xml
+	android:versionName
+		INJECTED from E:\Documents\DeveloperProjects\android\Festa\gpuimage\AndroidManifest.xml
+		ADDED from E:\Documents\DeveloperProjects\android\Festa\gpuimage\AndroidManifest.xml:2:1-4:12
+		INJECTED from E:\Documents\DeveloperProjects\android\Festa\gpuimage\AndroidManifest.xml
+	xmlns:android
+		ADDED from E:\Documents\DeveloperProjects\android\Festa\gpuimage\AndroidManifest.xml:2:1-4:12
+	android:versionCode
+		INJECTED from E:\Documents\DeveloperProjects\android\Festa\gpuimage\AndroidManifest.xml
+		ADDED from E:\Documents\DeveloperProjects\android\Festa\gpuimage\AndroidManifest.xml:2:1-4:12
+		INJECTED from E:\Documents\DeveloperProjects\android\Festa\gpuimage\AndroidManifest.xml

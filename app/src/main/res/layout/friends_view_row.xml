@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginTop="2.5dp"
+    android:layout_marginBottom="2.5dp"
+    android:background="@android:color/transparent"
+    android:baselineAligned="false"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="15dp"
+        android:layout_weight="2">
+
+        <com.github.abdularis.civ.CircleImageView
+            android:id="@+id/likeprofilepic"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/alia"
+            app:strokeColor="@color/darkRed"
+            app:strokeWidth="0.5dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="6"
+        android:gravity="center"
+        tools:ignore="RtlHardcoded">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <TextView
+                android:id="@+id/usernamelike"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Satyajit das"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text2ndsmall"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="Started following You  1h"
+                android:textColor="@color/gray"
+                android:textSize="@dimen/text2ndsmall"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="5dp"
+        android:layout_weight="1.5"
+        android:gravity="center">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:background="@color/blue"
+            android:text="Follow"
+            android:textColor="@color/white"
+            android:textSize="9sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,SmallSp" />
+    </LinearLayout>
+</LinearLayout>

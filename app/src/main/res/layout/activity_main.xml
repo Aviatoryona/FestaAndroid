@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:drawme="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="276dp"
+        android:background="@android:color/transparent"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="@color/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:layout_scrollInterpolator="@android:anim/overshoot_interpolator"
+            app:scrimAnimationDuration="800">
+
+            <com.github.florent37.arclayout.ArcLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:arc_height="25dp"
+                app:layout_collapseMode="parallax">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/imgMainImg"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:contentDescription="@string/app_name"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/gradient_1" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="?attr/actionBarSize"
+                        android:baselineAligned="false">
+
+                        <LinearLayout
+                            android:layout_marginTop="30dp"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/fab_margin"
+                                android:fontFamily="@font/google_sans_regular"
+                                android:text="What's happening"
+                                android:textColor="@color/grey_0"
+                                android:textSize="16sp"
+                                tools:ignore="HardcodedText" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/fab_margin"
+                                android:fontFamily="@font/robotothin"
+                                android:text="Near You"
+                                android:textColor="@color/grey_0"
+                                android:textSize="22sp"
+                                tools:ignore="HardcodedText" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_height="match_parent"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/fab_margin"
+                                android:fontFamily="@font/robotothin"
+                                android:text="Sports"
+                                android:textColor="@color/grey_0"
+                                android:textSize="22sp"
+                                tools:ignore="HardcodedText" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/fab_margin"
+                                android:fontFamily="@font/robotothin"
+                                android:text="Music Concerts"
+                                android:textColor="@color/grey_0"
+                                android:textSize="22sp"
+                                tools:ignore="HardcodedText" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/fab_margin"
+                                android:fontFamily="@font/robotothin"
+                                android:text="Album Launching"
+                                android:textColor="@color/grey_0"
+                                android:textSize="22sp"
+                                tools:ignore="HardcodedText" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/fab_margin"
+                                android:fontFamily="@font/robotothin"
+                                android:text="Festivals"
+                                android:textColor="@color/grey_0"
+                                android:textSize="22sp"
+                                tools:ignore="HardcodedText" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/fab_margin"
+                                android:fontFamily="@font/robotothin"
+                                android:text="More..."
+                                android:textColor="@color/grey_0"
+                                android:textSize="22sp"
+                                tools:ignore="HardcodedText" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </RelativeLayout>
+            </com.github.florent37.arclayout.ArcLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@android:color/transparent"
+                app:layout_collapseMode="pin"
+                app:layout_scrollFlags="snap|enterAlways"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:id="@+id/navIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:tint="@color/grey_0"
+                        app:srcCompat="@drawable/ic_filter_list_black_24dp"
+                        tools:ignore="ContentDescription" />
+
+                    <com.rafakob.drawme.DrawMeTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/fab_margin"
+                        android:layout_toEndOf="@+id/navIcon"
+                        android:text="@string/festa"
+                        android:textColor="@color/grey_0"
+                        android:textSize="18sp"
+                        drawme:dm_font="NexaLight.otf"
+                        tools:ignore="RelativeOverlap" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="@dimen/fab_margin"
+                        android:tint="@color/grey_0"
+                        app:srcCompat="@drawable/ic_search"
+                        tools:ignore="ContentDescription" />
+                </RelativeLayout>
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <include layout="@layout/content_main" />
+
+   <com.google.android.material.bottomnavigation.BottomNavigationView
+       android:visibility="gone"
+       android:id="@+id/bottomNavigation"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       app:menu="@menu/bottom_menu"
+       android:layout_gravity="bottom"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

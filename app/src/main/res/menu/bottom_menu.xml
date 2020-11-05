@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        app:showAsAction="ifRoom"
+        android:id="@+id/btm_home"
+        android:icon="@drawable/home_page_24px"
+        android:title="@string/home"/>
+    <item
+        android:id="@+id/btm_explore"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/near_me_24px"
+        android:title="Explore"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/btm_live"
+        app:showAsAction="ifRoom"
+        android:icon="@drawable/worldwide_location_black_24px"
+        android:title="Live Now"
+        tools:ignore="HardcodedText" />
+</menu>

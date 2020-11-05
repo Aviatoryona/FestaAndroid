@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:drawme="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="256dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    app:cardBackgroundColor="@color/grey_0"
+    app:cardCornerRadius="12dp"
+    app:cardPreventCornerOverlap="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relLayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <com.github.abdularis.civ.CircleImageView
+                android:id="@+id/profile_photo"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="11dp"
+                android:src="@mipmap/tom"
+                app:strokeColor="@color/darkRed"
+                app:strokeWidth="0.5dp" />
+
+
+            <com.rafakob.drawme.DrawMeTextView
+                android:id="@+id/username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/profile_photo"
+                android:padding="12dp"
+                android:text="Aviator"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                drawme:dm_font="Lato.ttf"
+                tools:ignore="HardcodedText" />
+
+
+            <ImageView
+                android:id="@+id/ivEllipses"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_ellipses"
+                tools:ignore="ContentDescription"
+                tools:visibility="gone" />
+
+        </RelativeLayout>
+
+        <com.joooonho.SelectableRoundedImageView
+            android:id="@+id/imgMainImg"
+            android:layout_width="match_parent"
+            android:layout_height="256dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/dia"
+            app:sriv_left_top_corner_radius="12dip"
+            app:sriv_right_top_corner_radius="12dip" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="7dp"
+                        android:src="@drawable/ic_heart_outline_black_24dp"
+                        android:tint="@color/grey_1000"
+                        tools:ignore="ContentDescription" />
+
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="7dp"
+                        android:src="@drawable/ic_message_outline_grey600_24dp"
+                        android:tint="@color/grey_1000"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="7dp"
+                        android:src="@drawable/ic_near_me_grey600_24dp"
+                        android:tint="@color/grey_1000"
+                        tools:ignore="ContentDescription" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/fab_margin"
+                    android:orientation="vertical">
+
+                    <com.rafakob.drawme.DrawMeTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="JAN 10 - FEB 14"
+                        drawme:dm_font="Lato.ttf"
+                        tools:ignore="HardcodedText" />
+
+                    <com.rafakob.drawme.DrawMeTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="Nairobi KICC grounds"
+                        android:textColor="@color/grey_1000"
+                        android:textStyle="bold"
+                        drawme:dm_font="Lato-Bold.ttf"
+                        tools:ignore="HardcodedText" />
+
+                    <com.rafakob.drawme.DrawMeTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:maxLines="1"
+                        android:text="JAN 10 - FEB 14"
+                        android:textSize="12sp"
+                        android:visibility="gone"
+                        drawme:dm_font="Lato.ttf"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <!--<com.lid.lib.LabelTextView-->
+                    <!--android:visibility="gone"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentEnd="true"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:layout_marginEnd="8dp"-->
+                    <!--android:paddingStart="22dp"-->
+                    <!--android:paddingTop="12dp"-->
+                    <!--android:paddingBottom="12dp"-->
+                    <!--android:text="Buy Tickets"-->
+                    <!--android:textColor="@color/colorAccent"-->
+                    <!--app:label_backgroundColor="#C2185B"-->
+                    <!--app:label_distance="15dp"-->
+                    <!--app:label_orientation="LEFT_TOP"-->
+                    <!--app:label_text="FESTA"-->
+                    <!--app:label_textSize="10sp"-->
+                    <!--app:label_textStyle="BOLD_ITALIC"-->
+                    <!--tools:ignore="HardcodedText,RtlSymmetry" />-->
+                <ImageView
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="-30dp"
+                    android:layout_marginEnd="@dimen/fab_margin"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/resize_basic_favorite"
+                    android:tint="@color/colorAccent" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <com.rafakob.drawme.DrawMeTextView
+                    android:visibility="gone"
+                    android:id="@+id/image_likes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="4"
+                    android:text="@string/lorem"
+                    drawme:dm_font="Lato.ttf"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="View all 3 comments"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/textsmall"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3 DAYS AGO"
+                    android:textColor="@color/grey"
+                    android:textSize="@dimen/textsmall"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

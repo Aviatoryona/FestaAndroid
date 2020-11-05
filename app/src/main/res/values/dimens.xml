@@ -1,0 +1,15 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="fab_large">55dp</dimen>
+    <dimen name="item_margin">8dp</dimen>
+
+
+    <dimen name="textsmall">12sp</dimen>
+    <dimen name="text2ndsmall">14sp</dimen>
+    <dimen name="textlarge">20sp</dimen>
+
+    <dimen name="marginstartpageleft">25dp</dimen>
+    <dimen name="marginstartpageright">25dp</dimen>
+    <dimen name="marginbetweenefields">15dp</dimen>
+    <dimen name="badge_text">12sp</dimen>
+</resources>

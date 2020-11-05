@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT" />
+        </compositeConfiguration>
+        <option name="distributionType" value="LOCAL" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="$APPLICATION_HOME_DIR$/gradle-5.4.1" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/ahbottomnavigation" />
+            <option value="$PROJECT_DIR$/animatedicons" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/arclayout" />
+            <option value="$PROJECT_DIR$/ariana" />
+            <option value="$PROJECT_DIR$/bounceview" />
+            <option value="$PROJECT_DIR$/bungeelib" />
+            <option value="$PROJECT_DIR$/circularfloatingactionmenu" />
+            <option value="$PROJECT_DIR$/circularimageview" />
+            <option value="$PROJECT_DIR$/customfloatingactionbutton" />
+            <option value="$PROJECT_DIR$/diagonallayout" />
+            <option value="$PROJECT_DIR$/dialogsheet" />
+            <option value="$PROJECT_DIR$/drawme" />
+            <option value="$PROJECT_DIR$/flatbutton" />
+            <option value="$PROJECT_DIR$/fontutils" />
+            <option value="$PROJECT_DIR$/gpuimage" />
+            <option value="$PROJECT_DIR$/imagecropper" />
+            <option value="$PROJECT_DIR$/instafilter" />
+            <option value="$PROJECT_DIR$/kenburnsview" />
+            <option value="$PROJECT_DIR$/labelview" />
+            <option value="$PROJECT_DIR$/materialchipview" />
+            <option value="$PROJECT_DIR$/slidingactivity" />
+            <option value="$PROJECT_DIR$/viewanimator" />
+            <option value="$PROJECT_DIR$/whorlviewlibrary" />
+          </set>
+        </option>
+        <option name="resolveModulePerSourceSet" value="false" />
+        <option name="testRunner" value="PLATFORM" />
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

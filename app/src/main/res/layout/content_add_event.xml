@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AddEvent"
+    tools:showIn="@layout/activity_add_event">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/grey_0"
+            app:cardCornerRadius="12dp"
+            app:cardPreventCornerOverlap="false">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.joooonho.SelectableRoundedImageView
+                    android:id="@+id/imgMainImg"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/bg"
+                    app:sriv_left_top_corner_radius="12dip"
+                    app:sriv_right_top_corner_radius="12dip" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="@dimen/fab_margin"
+                    android:background="@drawable/toast_stroke"
+                    android:fontFamily="@font/google_sans_regular"
+                    android:gravity="center"
+                    android:hint="Add Caption"
+                    android:inputType="textMultiLine"
+                    android:padding="8dp"
+                    android:textColor="@color/grey_0"
+                    android:textColorHint="@color/grey_0"
+                    android:textSize="26sp"
+                    tools:ignore="Autofill,HardcodedText" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_margin="@dimen/fab_margin"
+                    android:background="@drawable/round_bg_white_stroke"
+                    android:padding="12dp"
+                    android:src="@drawable/ic_pen"
+                    tools:ignore="ContentDescription" />
+
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/toast_stroke"
+                android:drawableStart="@drawable/ic_plus_18"
+                android:drawablePadding="@dimen/fab_margin"
+                android:paddingStart="16dp"
+                android:paddingTop="8dp"
+                android:paddingEnd="16dp"
+                android:paddingBottom="8dp"
+                android:text="Add photos"
+                tools:ignore="HardcodedText" />
+
+            <GridView
+                android:id="@+id/gridView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/fab_margin"
+                android:numColumns="3" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

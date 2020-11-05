@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fab_margin"
+                android:fontFamily="@font/google_sans_regular"
+                android:text="Upcoming Events"
+                android:textColor="@color/grey_1000"
+                android:textSize="22sp"
+                tools:ignore="HardcodedText,RelativeOverlap" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/fab_margin"
+                android:text="Buy tickets in advance to popular events"
+                tools:ignore="HardcodedText,RelativeOverlap" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_alignParentEnd="true"
+            android:padding="6dp"
+            android:background="@drawable/toast_accent"
+            android:text="More Events"
+            android:textColor="@color/grey_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        tools:itemCount="1"
+        tools:listitem="@layout/hori_main_event_model" />
+</LinearLayout>

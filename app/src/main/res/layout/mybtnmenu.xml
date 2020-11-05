@@ -1,0 +1,51 @@
+<com.getbase.floatingactionbutton.FloatingActionsMenu
+    android:id="@+id/multiple_actions_down"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true"
+    android:layout_alignParentTop="true"
+    fab:fab_addButtonColorNormal="@color/colorWhite"
+    fab:fab_addButtonColorPressed="@color/white_pressed"
+    fab:fab_addButtonSize="normal"
+    fab:fab_addButtonPlusIconColor="@color/half_black"
+    fab:fab_expandDirection="up"
+    fab:fab_labelStyle="@style/menu_labels_style"
+    android:layout_margin="@dimen/fab_margin"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto">
+
+    <!--<com.getbase.floatingactionbutton.FloatingActionButton-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--fab:fab_colorNormal="@color/colorWhite"-->
+        <!--fab:fab_colorPressed="@color/white_pressed"-->
+        <!--fab:fab_size="mini"/>-->
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/button_remove"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_colorNormal="@color/colorPrimary"
+        fab:fab_colorPressed="@color/white_pressed"
+        fab:fab_title="Create Event"
+        fab:fab_size="mini"/>
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/button_gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_title="Explore"
+        fab:fab_size="mini"
+        fab:fab_colorNormal="@color/colorPrimaryDark"
+        fab:fab_colorPressed="@color/white_pressed"/>
+
+    <com.getbase.floatingactionbutton.FloatingActionButton
+        android:id="@+id/action_enable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        fab:fab_colorNormal="@color/colorAccent"
+        fab:fab_title="Streaming now"
+        fab:fab_size="mini"
+        fab:fab_colorPressed="@color/white_pressed"/>
+
+</com.getbase.floatingactionbutton.FloatingActionsMenu>
